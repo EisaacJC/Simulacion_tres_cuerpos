@@ -16,6 +16,7 @@ m1=6e30
 m2=2e30
 m3=1e27 
 vi1x=0
+
 vi1y=-789035.908
 vi1z=0
 vi2x=0
@@ -67,6 +68,9 @@ while(t<ttotal):
         vi2x=0
         vi2y=0
         vi2z=0
+    elif(m1<0 or m2<0 or m3 <0):
+        print("Esos son valores incorrectos, prueba cerrando el script y volviendolo a abrir")
+        exit()
     ax1=G*(((m2*(x2-x1))/r12**3)+(m3*(x3-x1))/r13**3)
     ay1=G*(((m2*(y2-y1))/r12**3)+(m3*(y3-y1))/r13**3)
     az1=G*(((m2*(z2-z1))/r12**3)+(m3*(z3-z1))/r13**3)
@@ -129,9 +133,9 @@ while(t<ttotal):
     #print(p1.pos, "PARTICULA 1")
     #print(p2.pos, "PARTICULA 2")
     #print(p3.pos, "PARTICULA 3")
-    print("velocidades en cada instante de tiempo partícula de tiempo\n", v1x,v1y,v1z)
-    print("velocidades en cada instante de tiempo partícula de tiempo\n", v2x,v2y,v2z)
-    print("velocidades en cada instante de tiempo partícula de tiempo\n", v3x,v2y,v3z)
+    print("velocidades en cada instante de tiempo partÃ­cula de tiempo\n", v1x,v1y,v1z)
+    print("velocidades en cada instante de tiempo partÃ­cula de tiempo\n", v2x,v2y,v2z)
+    print("velocidades en cada instante de tiempo partÃ­cula de tiempo\n", v3x,v2y,v3z)
     
     t=t+dt
         
